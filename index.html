@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font Awesome link -->
+    <script src="https://kit.fontawesome.com/beed012768.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Complete Responsive website using Bootstrap</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar Start -->
+        <section class="Navigation-bar">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top">
+                <div class="container">
+                    <a class="navbar-brand fs-2 fst-italic fw-bolder" href="#">Tecno-<span
+                            class="text-primary ">Web</span> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+                            <li class="nav-item ">
+                                <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Courses
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#ui/ux-design">UI/UX design </a></li>
+                                    <li><a class="dropdown-item" href="#graphics">Graphics Design</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#web-design">Web Design</a></li>
+                                    <li><a class="dropdown-item" href="# fullstack">Full Stack Development</a></li>
+                                    <li><a class="dropdown-item" href="#python">Python Full Course</a></li>
+                                    <li><a class="dropdown-item" href="#sqa">SQA Course</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team-player"> Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact us</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- carosloe Start -->
+        <section class="Slider-caroual">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/news1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption  d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/news2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption  d-md-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/news3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption  d-md-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="about-me my-5" id="about-us">
+            <div class="container">
+                <div class="text-center fst-italic fw-bolder my-5">
+                    <h1> About <span class="text-primary">Us</span> </h1>
+                    <hr class="w-25 m-auto">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-12">
+                        <h1 class="text-center fst-italic fw-bolder"> What do you<span class="text-primary"> want to
+                                know?</span></h1>
+                        <p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quisquam
+                            debitis vel enim optio aspernatur sequi, cumque distinctio consequuntur, quam culpa iusto
+                            consequatur repudiandae quaerat id! Soluta, veritatis tenetur? Optio?</p>
+                        <button type="button" class="btn btn-warning mb-3">More About Us</button>
+                        <p>
+                            Our Service
+                        </p>
+
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Software design
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's accordion body.</strong> It is shown by
+                                        default,
+                                        until the collapse plugin adds custom CSS or overriding our default variables.
+                                        It's
+                                        also worth noting that just about any HTML can go within the
+                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Software Development
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default,
+                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                        via
+                                        CSS transitions.noting that just about any HTML can go within the
+                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Software Quality Asurance(SQA)
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default,
+                                        until the collapse plugin adds the appropriate classes that we use to style each
+                                        variables. It's also worth noting that just about any HTML can go within the
+                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-12 m-auto text-end">
+                        <img class="img-fluid img-thumbnail" src="images/ab3.jpg" alt="">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="courses py-5 bg-light" id="ui/ux-design">
+            <div class="container">
+                <div class="text-center fst-italic fw-bolder my-3">
+                    <h1> Our <span class="text-primary">Courses</span> </h1>
+                    <hr class="w-25 m-auto">
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fab fa-figma bg-primary p-2 fs-4 rounded text-white mb-2"></i>
+                                <h5 class="card-title" id="ui/ux-design">UI/UX design</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in With supporting
+                                    text
+                                    below as a natural lead-in to additional content. to additional content.
+                                </p>
+                                <p>
+                                    <strong class="fs-3">$399</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                <i class="fas fa-play bg-white p-2 fs-4 rounded text-dark mb-2"></i>
+                                <h5 class="card-title" id="graphics">Graphics design</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in With supporting
+                                    text
+                                    below as a natural lead-in to additional content. to additional content.
+                                </p>
+                                <p>
+                                    <strong class="fs-3">$567</strong>
+                                </p>
+                                <a href="#" class="btn btn-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-code bg-primary p-2 fs-4 rounded text-white mb-2"></i>
+                                <h5 class="card-title" id="web-design">Web design</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in With supporting
+                                    text
+                                    below as a natural lead-in to additional content. to additional content.
+                                </p>
+                                <p>
+                                    <strong class="fs-3">$219</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-lg-4 col-md-6 col-12 ">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-laptop-code bg-primary p-2 fs-4 rounded text-white mb-2"></i>
+                                <h5 class="card-title" id="fullstack">Full Stack Development</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in With supporting
+                                    text
+                                    below as a natural lead-in to additional content. to additional content.
+                                </p>
+                                <p>
+                                    <strong class="fs-3">$350</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                <i class="fas fa-school bg-white p-2 fs-4 rounded text-dark mb-2"></i>
+                                <h5 class="card-title" id="python">Python Full Course</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in With supporting
+                                    text
+                                    below as a natural lead-in to additional content. to additional content.
+                                </p>
+                                <p>
+                                    <strong class="fs-3">$149</strong>
+                                </p>
+                                <a href="#" class="btn btn-warning">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-pencil-ruler bg-primary p-2 fs-4 rounded text-white mb-2"></i>
+                                <h5 class="card-title" id="sqa">SQA</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in With supporting
+                                    text
+                                    below as a natural lead-in to additional content. to additional content.
+                                </p>
+                                <p>
+                                    <strong class="fs-3">$79</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="my-5" id="team-player">
+            <div class="container ">
+                <div class="text-center fst-italic fw-bolder my-3">
+                    <h1> Our <span class="text-primary">Team Players</span> </h1>
+                    <hr class="w-25 m-auto">
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img class="img-fluid rounded-circle border border-primary p-2" src="images/s6.jpg"
+                                    alt="">
+                                <h5 class="card-title mt-2 fw-bolder">Mark Winds</h5>
+                                <p class="card-text fst-italic"><strong>Front-end-developer</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img class="img-fluid rounded-circle border border-primary p-2" src="images/s4.jpg"
+                                    alt="">
+                                <h5 class="card-title mt-2 fw-bolder">Md.Masum Islam</h5>
+                                <p class="card-text fst-italic"><strong>UI/UX Designer</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img class="img-fluid rounded-circle border border-primary p-2" src="images/s5.jpg"
+                                    alt="">
+                                <h5 class="card-title mt-2 fw-bolder">Maria Derws</h5>
+                                <p class="card-text fst-italic"><strong>Graphics Designer</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img class="img-fluid rounded-circle border border-primary p-2" src="images/s2.jpg"
+                                    alt="">
+                                <h5 class="card-title mt-2 fw-bolder">Alone Wlaker</h5>
+                                <p class="card-text fst-italic"><strong>full-Stack-developer</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img class="img-fluid rounded-circle border border-primary p-2" src="images/s3.jpg"
+                                    alt="">
+                                <h5 class="card-title mt-2 fw-bolder">Stefene Micman</h5>
+                                <p class="card-text fst-italic"><strong>Python-Developer</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img class="img-fluid rounded-circle border border-primary p-2" src="images/s5.jpg"
+                                    alt="">
+                                <h5 class="card-title mt-2 fw-bolder">Aleana Quine</h5>
+                                <p class="card-text fst-italic"><strong>SQA</strong>
+                                </p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container ">
+                <div class="text-center fst-italic fw-bolder my-3">
+                    <h1>Feel Free To<span class="text-primary">Contact </span> </h1>
+                    <hr class="w-25 m-auto">
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 ">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Name</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Email</label>
+                                <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Description</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">State</label>
+                                <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Check me out
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">SEND</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12  m-auto text-center ">
+                        <div class="row">
+                            <div class="col-12">
+                                <i class="fas fa-map-marker-alt fs-3 me-2"></i><strong class="fs-4">Corporate
+                                    Headquarter</strong>
+                                <p>House-34 (2nd floor), Road-11<br />
+                                    D.I.T Project, Merul Badda<br />
+                                    Dhaka 1212,Bangladesh.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <i class="fas fa-home fs-3 me-2"></i><strong class="fs-4">US Office</strong>
+                            <p>4141 70th St<br />
+                                Woodside<br />
+                                New York<br />
+                                11377-3927.USA<br />
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <i class="fas fa-address-book fs-3 me-2"></i><strong class="fs-4">General Contact</strong>
+                            <p>
+                                Mobile 1: +880 1788 803 225<br />
+                                Mobile 3: +880 1711 111 740<br />
+                                Email: info@gentlesofts.com</p>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container m-auto text-center my-3 bg-primary text-dark p-2">
+            <p>Developed By <strong>@Tecno-Web(Shihab-khan)->2021-2023.</strong>All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- javascript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
